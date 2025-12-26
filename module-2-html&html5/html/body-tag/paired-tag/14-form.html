@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Page Title</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+<script src='main.js'></script>
+<style>
+div 
+{
+width: 35%;
+height: auto;
+margin: auto;
+margin-top: 5%;    
+}    
+input,textarea 
+{
+width: 90%;
+height: auto;
+padding: 5px;    
+}
+input[type="submit"]
+{
+width: 30%;
+height: auto;
+padding: 6px;
+background-color: black;
+color: white;
+border: none;    
+}
+</style>
+</head>
+<body>
+<div>
+<h1>Contact Form</h1>    
+<hr />
+<form name="frm" id="frm" action="welcome.html" method="post">
+<fieldset>
+<legend>send all required field</legend>    
+<input type="text" placeholder="Name *" required />
+<br><br>
+   
+<input type="text" placeholder="Email *" required />
+<br><br>
+
+<input type="text" placeholder="Phone *" required />
+<br><br>
+
+<input type="text" placeholder="Subject *" required />
+<br><br>
+
+   
+<textarea  placeholder="Message *" required></textarea>
+<br><br>
+
+   
+<input type="submit" value="Send" />
+</fieldset>    
+</form>
+</div>
+</body>
+</html>
