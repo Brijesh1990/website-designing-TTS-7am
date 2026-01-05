@@ -1,0 +1,42 @@
+body 
+{
+margin: 0;
+padding: 0;
+background-color: lightgray;
+}
+div 
+{
+width: 40%;
+height: auto;
+margin: auto;
+padding: 10px;
+}
+div img
+{
+width: 60%;
+height: 150px;
+height: auto;
+margin-left: 20%;
+}
+div h1 
+{
+margin-top: -15%;    
+}
+input
+{
+width: 50%;
+height: auto;
+margin-left: 25%;
+padding: 8px;
+border: 0;
+}
+input[type="submit"]
+{
+width: 54%;
+height: auto;
+margin-left: 25%;   
+padding: 8px;
+border: 0;
+background-color: blue;
+color: white;  
+}
