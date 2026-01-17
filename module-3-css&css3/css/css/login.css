@@ -6,7 +6,7 @@ background-color: lightgray;
 }
 div 
 {
-width: 40%;
+width: 22%;
 height: auto;
 margin: auto;
 padding: 10px;
@@ -22,20 +22,31 @@ div h1
 {
 margin-top: -15%;    
 }
-input
+input,textarea,select
 {
-width: 50%;
+width: 100%;
 height: auto;
-margin-left: 25%;
-padding: 8px;
+margin: auto;
+margin-left:0%;
+padding: 10px;
 border: 0;
 }
 input[type="submit"]
 {
-width: 54%;
+width: 26%;
 height: auto;
-margin-left: 25%;   
-padding: 8px;
+padding: 12px;
+border: 0;
+background-color: blue;
+color: white;  
+}
+
+input[type="reset"]
+{
+width: 26%;
+height: auto;   
+margin-left: 0;
+padding: 12px;
 border: 0;
 background-color: blue;
 color: white;  
