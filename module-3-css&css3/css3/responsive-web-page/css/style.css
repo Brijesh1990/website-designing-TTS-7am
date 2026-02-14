@@ -1,0 +1,145 @@
+:root 
+{
+--bg-dark:#e6e7eb;   
+--bg-success:#05df71;
+--bg-orange:#ff8905;
+--bg-yellow:#fcc700;
+--bg-white:#ffffff;
+--txt-dark:#e6e7eb;   
+--txt-success:#05df71;
+--txt-orange:#ff8905;
+--txt-yellow:#fcc700;
+--txt-dark:#e6e7eb;
+--txt-white:#ffffff;
+
+}
+body 
+{
+margin: 0;
+padding: 0;
+background-color:var(--bg-dark);    
+}
+#header
+{
+width: 90%;
+height: auto;
+margin: auto;
+display: flex;
+flex-wrap: wrap;    
+}
+.logo
+{
+width: 30%;
+height: auto;
+margin: auto;
+}
+.navbar
+{
+width: 60%;
+height: auto;
+margin: auto;
+}
+.menu
+{
+margin-left: 22%;
+}
+.menu li 
+{
+display: inline-block;
+padding: 0px 20px;
+text-decoration: none;    
+}
+.menu li a 
+{
+text-decoration: none;
+list-style-type: none;
+color: black;
+font-size: 19px;
+}
+.cart
+{
+width: 10%;
+height: auto;
+margin: auto;
+}
+.cart-menu li 
+{
+display: inline-block;
+padding: 0px 5px;
+text-decoration: none;
+}
+.cart-menu a 
+{
+text-decoration: none;
+list-style-type: none;
+color: black;
+font-size: 19px;   
+}
+#search 
+{
+width: 90%;
+height: auto;
+margin: auto;    
+}
+#search input
+{
+width: 50%;
+height: auto;
+margin: auto;    
+margin-left: 25%;
+padding: 15px;
+margin-top: 2%;
+border: solid 2px #ff8905;
+border-radius: 20px;
+}
+#slider
+{
+width: 90%;
+height: 280px;
+margin: auto;
+background: url(../images/banner.png) no-repeat;
+background-position: center;
+background-size: cover;    
+margin-top: 3%;
+border-radius: 20px;
+}
+#content
+{
+width: 90%;
+height: auto;
+margin: auto;
+margin-top: 5%;    
+}
+.category
+{
+width: 100%;
+height: auto;
+margin: auto;    
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+align-content: center;
+}
+.fruit-category
+{
+ width: 100%;
+ height: auto;
+ margin: auto;
+ padding: 0px;   
+ align-items: center;
+ align-content: center;
+ display: flex;
+}
+.fruit-category img 
+{
+ width: 100%;
+ height: 80px;
+ margin: 10px;
+ border-radius: 15px;   
+}
+
+/* media query applied here */
+@media only screen and (min-width:320px) and (max-width:587px)
+{
+
+}

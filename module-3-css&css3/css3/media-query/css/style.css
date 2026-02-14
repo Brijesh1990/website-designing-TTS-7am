@@ -1,0 +1,249 @@
+body 
+{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+background-color: aliceblue;    
+}
+#navbar
+{
+width: 100%;
+height: auto;
+margin: 0 auto;
+background-color: #074857;
+display: flex;
+flex-wrap: wrap;
+top: 0;
+position: sticky;
+}
+.logo
+{
+width: 45%;
+height: auto;
+margin: 0 auto;
+color: white;
+}
+.logo h1 
+{
+font-size: 45px;    
+}
+.nav 
+{
+width: 45%;
+height: auto;    
+}
+.nav ul 
+{
+top: 0;
+}
+.nav ul li 
+{
+display: inline-block;    
+text-decoration: none;
+list-style-type: none;
+padding: 25px 10px;
+font-size: 20px;
+text-transform: uppercase;
+}
+.nav ul li a 
+{
+text-decoration: none;
+list-style-type: none;   
+color: white; 
+}
+#slider
+{
+width: 80%;
+height: auto;
+margin: 0 auto;
+padding: 45px;
+margin-top: 2%;
+background: url('https://img.freepik.com/free-photo/shopping-concept-close-up-portrait-young-beautiful-attractive-redhair-girl-smiling-looking-camera_1258-118763.jpg?semt=ais_user_personalization&w=740&q=80') no-repeat;
+background-position: center;
+background-size: cover;    
+}
+.slider-txt 
+{
+ width: 60%;
+ height: auto;
+ margin: auto;
+ padding: 40px;
+ text-align: center;   
+}
+.slider-txt h1 
+{
+ font-size: 45px;
+ color: white;   
+}
+#content
+{
+width: 80%;
+height: auto;
+margin: 0 auto; 
+display: flex;
+flex-wrap: wrap;   
+margin-top: 5%;
+}
+.content1,
+.content2,
+.content3,
+.content4,
+.content5,
+.content6
+{
+width: 45%;
+height: auto;
+margin: auto;
+padding: 10px;
+text-align: center;
+border: solid 2px black;    
+margin-top: 5%;
+}
+.nav-mobile 
+{
+ width: 40%;   
+ display: none;   
+}
+
+/* applied media query in css3 for making responsive content */
+/* mobile screen device */
+@media only  screen and (min-width:320px) and (max-width:587px)
+{
+body 
+{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+background-color: white;    
+}
+#navbar
+{
+width: 100%;
+height: auto;
+margin: 0 auto;
+background-color: #0d3f61 !important;
+display: flex;
+flex-wrap: wrap;
+top: 0;
+position: sticky;
+}
+.logo
+{
+width: 40%;
+height: auto;
+margin: 0;
+margin-left: 8%;
+padding: 5px;
+color: white;
+}
+.logo h1 
+{
+font-size: 35px;    
+}
+.nav 
+{
+width: 45%;
+height: auto;
+display: none;    
+}
+.nav ul 
+{
+top: 0;
+}
+.nav ul li 
+{
+display: inline-block;    
+text-decoration: none;
+list-style-type: none;
+padding: 25px 10px;
+font-size: 20px;
+text-transform: uppercase;
+}
+.nav ul li a 
+{
+text-decoration: none;
+list-style-type: none;   
+color: white; 
+}
+.nav-mobile 
+{
+ width: 40%;   
+ display: block;   
+}
+.nav-mobile ul li 
+{
+ display: none;   
+}
+#btn-toggler
+{
+font-size: 35px;
+margin-top: 8%; 
+float: right;   
+}
+#slider
+{
+width: 80%;
+height: auto;
+margin: 0 auto;
+padding: 25px;
+margin-top: 2%;
+background: url('https://img.freepik.com/free-photo/shopping-concept-close-up-portrait-young-beautiful-attractive-redhair-girl-smiling-looking-camera_1258-118763.jpg?semt=ais_user_personalization&w=740&q=80') no-repeat;
+background-position: center;
+background-size: cover;    
+}
+.slider-txt 
+{
+ width: 60%;
+ height: auto;
+ margin: auto;
+ padding: 0px;
+ text-align: center;   
+}
+.slider-txt h1 
+{
+ font-size: 25px;
+ color: white;   
+}
+#content
+{
+width: 80%;
+height: auto;
+margin: 0 auto; 
+display: flex;
+flex-wrap: wrap;   
+margin-top: 5%;
+}
+.content1,
+.content2,
+.content3,
+.content4,
+.content5,
+.content6
+{
+width: 100%;
+height: auto;
+margin: auto;
+padding: 10px;
+text-align: center;
+border: solid 2px black;    
+margin-top: 5%;
+}
+}
+
+/* mobile tablet device */
+@media only  screen and (min-width:588px) and (max-width:767px)
+{
+
+}
+
+/* mobile laptop device */
+@media only  screen and (min-width:768px) and (max-width:1024px)
+{
+
+}
+
+/* mobile dekstop or large device */
+@media only  screen and (min-width:1025px) and (max-width:1440px)
+{
+
+}
