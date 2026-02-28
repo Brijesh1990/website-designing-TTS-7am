@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grocery App UI</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<section id="header">
+
+<div class="logo">
+<img src="images/logo.png" alt="logo">
+</div>
+
+<div class="navbar">
+
+<ul class="mobile-menu">
+<li><button id="menuBtn"><i class="bi bi-list"></i></button></li>
+</ul>
+
+<ul class="menu" id="sideMenu">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
+
+</div>
+
+<div class="cart">
+<ul class="cart-menu">
+<li><a href="#">🛒 <span class="badge">2</span></a></li>
+<li><a href="#">👤</a></li>
+</ul>
+</div>
+</section>
+
+<!-- SEARCH -->
+<section id="search">
+<input type="text" placeholder="Search groceries…">
+</section>
+
+
+<!-- CONTACT BANNER -->
+<section id="contactBanner">
+<h1>Contact Us</h1>
+<p>We would love to hear from you</p>
+</section>
+
+
+<!-- CONTACT CONTENT -->
+<section id="contactPage">
+
+<div class="contact-grid">
+
+<!-- ADDRESS -->
+<div class="contact-info">
+<h2>Our Address</h2>
+
+<p>🏢 Grocery App Pvt Ltd</p>
+<p>📍 Surat, Gujarat, India</p>
+<p>📞 +91 9876543210</p>
+<p>✉ support@groceryapp.com</p>
+
+<!-- MAP -->
+<div class="map">
+<iframe
+src="https://maps.google.com/maps?q=surat&t=&z=13&ie=UTF8&iwloc=&output=embed"
+loading="lazy">
+</iframe>
+</div>
+
+</div>
+
+
+<!-- CONTACT FORM -->
+<div class="contact-form">
+
+<h2>Send Message</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Email" required>
+<input type="text" placeholder="Subject">
+
+<textarea rows="5" placeholder="Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- BOTTOM MOBILE NAV -->
+<section id="bottomNav">
+<a href="#">🏠</a>
+<a href="#">🔎</a>
+<a href="#">🛒</a>
+<a href="#">👤</a>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
