@@ -1,0 +1,9 @@
+.whatsapp-app
+{   
+animation:2s bounce infinite;
+}
+.bi-whatsapp 
+{
+font-size: 90px !important;    
+margin-left: -25% !important;
+}
