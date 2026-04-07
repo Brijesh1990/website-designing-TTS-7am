@@ -1,0 +1,55 @@
+
+.img-fluid:hover 
+{
+filter: brightness(70%);    
+} 
+.navbar ul 
+{
+margin-left: 20%;    
+}
+.navbar ul li 
+{
+display: inline-block;
+padding: 5px 25px;
+text-decoration: none;    
+}   
+.navbar a 
+{
+text-decoration: none;
+list-style-type: none;
+color: white;
+text-transform: capitalize;    
+}
+.dropdown:hover .dropdown-menu 
+{
+    background-color: black;
+    display: block;
+}
+.btn-close 
+{
+color: red !important;
+}
+@media only screen and (max-width:587px)
+{
+.bg-white
+{
+width: 96% !important;
+height: auto;
+margin: auto;    
+}  
+.col-md-3 
+{
+width: 23% !important;
+height: auto;
+display: flex;
+flex-direction: row;    
+}  
+.navbar ul 
+{
+margin-left:0%;    
+}
+.navbar ul li 
+{
+display: block;    
+}
+}
