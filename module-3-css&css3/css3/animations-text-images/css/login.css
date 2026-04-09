@@ -1,0 +1,88 @@
+
+body {
+font-family: Arial, sans-serif;
+background: #f4f6f9;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+
+.contact-container {
+background: #ffffff;
+padding: 40px;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+width: 70%;
+/* animation:2s ease alternate fadeInLeft; */
+/* animation:2s ease alternate fadeOutTopLeft; */
+
+display: flex;
+flex-wrap: wrap;
+}
+.leftsidebar
+{
+width: 45%;
+height: 250px;
+margin: auto;    
+padding: 15px;
+background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6zM2A3sods7JYiIXWbzkB7OWC-BENzV3xuQ&s') no-repeat;
+background-size: cover;   
+animation: 2s ease infinite fadeIn;
+}
+
+.rightsidebar
+{
+width: 50%;
+height: auto;
+margin: auto;   
+animation:0.8s ease alternate fadeIn;
+}
+
+h2 {
+text-align: center;
+margin-bottom: 20px;
+font-size: 45px;
+/* animation: 2s ease infinite heartBeat; */
+animation: 5s ease infinite shakeY;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+input, textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 6px;
+font-size: 14px;
+}
+
+textarea {
+resize: vertical;
+min-height: 100px;
+}
+
+button {
+width: 100%;
+padding: 12px;
+background: #007bff;
+color: #fff;
+border: none;
+border-radius: 6px;
+font-size: 16px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+button:hover {
+background: #0056b3;
+}

@@ -1,0 +1,3 @@
+what is client - server architecture  ?
+ 
+ 

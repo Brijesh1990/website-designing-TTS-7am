@@ -1,0 +1,167 @@
+body 
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+overflow-x: hidden;
+background-color: #112332;
+}
+#main
+{
+width: auto;
+height: auto;
+margin-top: 5%;    
+}
+.login-form
+{
+width: 100%;
+height: auto;
+margin: auto;
+margin-top: 10%;
+border-radius: 10px;
+background-color: transparent; 
+}
+fieldset
+{
+border: 2px solid #101d32;
+width: 30%;
+height: auto;
+margin: auto;
+border: solid 2px #2f3b44;
+border-radius: 20px;
+}
+img 
+{
+width: 70%;
+height: auto;  
+margin-left: 15%;  
+animation: 2s ease bounce infinite;
+}
+#btn 
+{
+width: 40%;
+height: auto;
+margin: auto;
+background-color: #4ade80;
+border: 0;
+border-radius: 20px;
+padding: 15px;   
+margin-left: 10%; 
+}
+
+#btn1 
+{
+width: 40%;
+height: auto;
+margin: auto;
+background-color:transparent;
+border: 0;
+border-radius: 20px;
+padding: 15px;   
+margin-left: 0%; 
+color: white;
+}
+.form-group
+{
+width: 80%;
+height: auto;
+margin: auto;
+margin-top: 5%;    
+}
+.form-group input,textarea 
+{
+width: 100%;
+height: auto;
+margin: auto;    
+padding: 12px;
+border-radius: 12px;
+border: none;
+}
+.form-group input[type="submit"]
+{
+width: 50%;
+height: auto;
+margin: auto;    
+padding: 12px;
+border-radius: 12px;
+border: none;    
+background-color: #4ade80;
+}
+.form-group input[type="reset"]
+{
+width: 45%;
+height: auto;
+margin: auto;    
+padding: 12px;
+border-radius: 12px;
+border: none;    
+background-color: red;
+} 
+.form-group a 
+{
+text-decoration: none;
+list-style-type: none;    
+color: white;
+}
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+width:60px;
+height:60px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+z-index:1000;
+transition:0.3s;
+}
+
+.whatsapp-float img{
+width:35px;
+height:35px;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.1);
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+@media only screen and (min-width:320px) and (max-width:587px)
+{
+#main
+{
+width: auto;
+height: auto;
+margin-top: 20%;    
+}    
+fieldset
+{
+border: 2px solid #101d32;
+width: 85%;
+height: auto;
+margin: auto;
+border: solid 2px #2f3b44;
+border-radius: 20px;
+}    
+img 
+{
+width: 60%;
+height: auto;   
+margin: auto;
+margin-left: 20%; 
+}
+.whatsapp-float{
+width:55px;
+height:55px;
+bottom:20px;
+right:20px;
+}
+
+.whatsapp-float img{
+width:30px;
+}
+
+}

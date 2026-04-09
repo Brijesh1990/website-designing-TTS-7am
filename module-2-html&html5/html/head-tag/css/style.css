@@ -1,0 +1,11 @@
+body 
+{
+background-color: lightgray;    
+}
+h1 
+{
+color: white;
+font-size: 45px;
+text-align: center;
+text-shadow: 1px 5px black;    
+}
