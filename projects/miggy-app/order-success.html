@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +15,29 @@
             color: var(--swiggy-success);
             animation: bounceIn 1s;
         }
+
         @keyframes bounceIn {
-            0% { transform: scale(0.3); opacity: 0; }
-            50% { transform: scale(1.05); opacity: 1; }
-            70% { transform: scale(0.9); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(0.3);
+                opacity: 0;
+            }
+
+            50% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+
+            70% {
+                transform: scale(0.9);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
     </style>
 </head>
+
 <body class="bg-white">
 
     <div class="container h-100 min-vh-100 d-flex align-items-center justify-content-center">
@@ -41,7 +57,7 @@
                 <a href="index.html" class="btn btn-swiggy btn-lg px-5">Go Home</a>
                 <a href="products.html" class="btn btn-outline-dark btn-lg px-5">Order More</a>
             </div>
-            
+
             <div class="mt-5">
                 <p class="text-muted">Estimated Delivery Time: <span class="fw-bold text-dark">45 mins</span></p>
             </div>
@@ -60,4 +76,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
