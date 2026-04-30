@@ -1,0 +1,46 @@
+<style>
+form 
+{
+width: 50%;
+height: auto;
+margin: auto;
+padding: 20px;    
+}    
+form input 
+{
+width: 50%;
+height: auto;
+padding: 8px;    
+}
+#result 
+{
+font-size: 25px;
+font-weight: bold;
+}
+</style>
+<script>
+function display()
+{
+
+let year=document.getElementById("year").value;
+if(year%4==0)
+{
+document.getElementById("result").innerHTML="The year is a Leap  year"; 
+}
+else 
+{
+
+document.getElementById("result").innerHTML="The year is not a leap year";
+}
+}
+</script>
+<center>
+<h3>Check leap year</h3>
+<form>
+<input type="text" id="year" placeholder="Enter a Year *" required />
+<br>
+<br>
+<button type="button" onclick="display()">Click here</button>
+</form>
+<p id="result"></p>    
+</center>
