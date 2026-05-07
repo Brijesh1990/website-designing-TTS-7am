@@ -1,0 +1,25 @@
+<script>
+// what is forOf loop in javascript
+/*
+The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined iterables. It invokes a custom iteration hook with statements to be executed for the value of each distinct property of the object.
+
+Syntax:
+for (variable of iterable) {
+  // code block to be executed
+}
+Parameters:
+variable: On each iteration, a value of the next property is assigned to variable. It can be declared with var, let, or const. If the variable is not declared, it is treated as a property of the global object.
+iterable: An object that has iterable properties. The for...of statement iterates over the
+
+iterable objects as defined by the iterable protocol, which includes built-in String, Array, array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined iterables.
+*/
+
+let employee = ["Rohit", "Suresh", "Ramesh", "Sanjay", "Vijay", "Ajay", "Rahul", "Rakesh", "Suresh", "Rohit"];
+console.log(employee);
+
+//array as values
+for(let items of employee){
+    console.log(items);
+}
+
+</script>    
