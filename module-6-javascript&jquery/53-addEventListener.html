@@ -1,0 +1,71 @@
+<style>
+.app 
+{
+width: 50%;
+height: auto;
+margin: auto;
+padding: 25px;
+margin-top: 5%;    
+}    
+</style>
+<center>
+<div class="app">
+<p id="result"></p>
+<h3>click for add Numbers</h3>
+<button type="button" id="btn1">Additions</button>
+<button type="button" id="btn2">Substractions</button>
+<button type="button" id="btn3">Multiplications</button>
+<button type="button" id="btn4">Divisions</button>
+</div>   
+</center>
+
+<script>
+/*  
+1. addEventListener is used as events 
+2. addEventListener is used as events used in adv javascript
+3. addEventListener is used as a events but it is called using callback
+*/
+
+var btn1=document.getElementById("btn1");
+btn1.addEventListener("click",function(){
+
+var a=parseInt(prompt("Enter a values :"));
+var b=parseInt(prompt("Enter b values :"));
+var c=a+b;
+document.getElementById("result").innerHTML="Additions of numbers is :"+c;
+})
+
+
+var btn2=document.getElementById("btn2");
+btn2.addEventListener("click",function(){
+
+var a=parseInt(prompt("Enter a values :"));
+var b=parseInt(prompt("Enter b values :"));
+var c=a-b;
+document.getElementById("result").innerHTML="Substractions of numbers is :"+c;
+})
+
+
+
+
+var btn3=document.getElementById("btn3");
+btn3.addEventListener("click",function(){
+
+var a=parseInt(prompt("Enter a values :"));
+var b=parseInt(prompt("Enter b values :"));
+var c=a*b;
+document.getElementById("result").innerHTML="Multiplications of numbers is :"+c;
+})
+
+
+
+
+var btn4=document.getElementById("btn4");
+btn4.addEventListener("click",function(){
+
+var a=parseInt(prompt("Enter a values :"));
+var b=parseInt(prompt("Enter b values :"));
+var c=a/b;
+document.getElementById("result").innerHTML="Divisions  of numbers is :"+c;
+})
+</script>

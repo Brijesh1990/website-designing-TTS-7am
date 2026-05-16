@@ -1,0 +1,50 @@
+<style>
+form 
+{
+width: 50%;
+height: auto;
+margin: auto;
+padding: 20px;    
+}    
+form input 
+{
+width: 50%;
+height: auto;
+padding: 8px;    
+}
+#result 
+{
+font-size: 25px;
+font-weight: bold;
+}
+button 
+{
+width: 30%;
+height: auto;
+padding: 8px;
+border: none;
+background-color: black;
+color: white;    
+}
+</style>
+<script>
+function display()
+{
+
+let number=document.getElementById("number").value;
+//let res=Math.pow(number,2);
+let res=Math.pow(number,3);
+document.getElementById("result").innerHTML="The square of numbers is :"+res;
+
+}
+</script>
+<center>
+<h1>Find square of numbers</h1>
+<form>
+<input type="text" id="number" placeholder="Enter a Numbers *" required />
+<br>
+<br>
+<button type="button" onclick="display()">Click here</button>
+</form>
+<p id="result"></p>    
+</center>

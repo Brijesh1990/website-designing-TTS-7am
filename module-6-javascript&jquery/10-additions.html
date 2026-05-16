@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Page Title</title>
+<link rel='stylesheet' href='main.css'>
+<style>
+.app 
+{
+width: 30%;
+height: auto;
+margin: auto;
+padding: 20px;
+margin-top: 5%;    
+}    
+</style>
+<script>
+function display()
+{
+ var a=parseInt(document.getElementById("a").value);
+ var b=parseInt(document.getElementById("b").value);
+ var c=a+b;    
+ document.getElementById("result").innerHTML="Additions of Numbers is  :"+c;
+}    
+</script>
+</head>
+<body>
+
+<div class="app">
+<h3>Additions of numbers</h3>    
+<p id="result"></p>
+<form>
+<input type="text" id="a" placeholder="Enter N1 Numbers *" required />
+<br><br>
+<input type="text" id="b" placeholder="Enter N2 Numbers *" required />
+<br><br>
+<button type="button" onclick="display()">Additions</button>
+</form>    
+<br>
+
+</div>
+
+</body>
+</html>

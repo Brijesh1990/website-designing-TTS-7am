@@ -1,0 +1,28 @@
+<script>
+// forIn loop in javascript
+/*
+The for...in statement iterates over all enumerable properties of an object that are keyed by strings (ignoring ones keyed by Symbols), including inherited enumerable properties. For each distinct property, statements can be executed.
+Syntax:
+for (variable in object) {
+  // code block to be executed
+}
+Parameters:
+variable: On each iteration, a string representing the name of the current property is assigned to variable. It can be declared with var, let, or const. If the variable is not declared, it is treated as a property of the global object.
+object: The object whose enumerable properties are iterated over.
+*/
+
+let employee = {
+    name: "Rohit",
+    age: 30,
+    city: "Delhi",
+    salary: 50000,
+    department: "IT",
+    experience: 5,
+    isPermanent: true,
+    hobbies: ["Reading", "Traveling", "Cooking"],
+};
+
+for(let key in employee){
+    console.log(key + ": " + employee[key]);
+}
+</script>

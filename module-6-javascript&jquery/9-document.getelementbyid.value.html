@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Page Title</title>
+<link rel='stylesheet' href='main.css'>
+<style>
+.app 
+{
+width: 30%;
+height: auto;
+margin: auto;
+padding: 20px;
+margin-top: 5%;    
+}    
+</style>
+<script>
+function display()
+{
+ var nm=document.getElementById("name").value;    
+ document.getElementById("result").innerHTML="My name is :"+nm;
+}    
+</script>
+</head>
+<body>
+
+<div class="app">
+<h3>Print your Name</h3>    
+<form>
+<input type="text" id="name" placeholder="Enter your Name *" required />
+<br><br>
+<button type="button" onclick="display()">Click Me</button>
+</form>    
+<br>
+<p id="result"></p>
+</div>
+
+</body>
+</html>
