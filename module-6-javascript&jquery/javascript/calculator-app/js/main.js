@@ -48,3 +48,4 @@ const protectedImage = document.getElementById('my-protected-img');
 protectedImage.addEventListener('contextmenu', function(event) {
     event.preventDefault();
 });
+

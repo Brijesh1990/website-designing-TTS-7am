@@ -57,7 +57,7 @@ border border-white/10"
 
 <button class="calc-btn bg-orange-500 text-white p-4 rounded-2xl text-lg font-semibold" onclick="clrValue()">C</button>
 
-<button class="calc-btn bg-red-600 text-white p-4 rounded-2xl text-lg font-semibold" onclick="slcData()"><=</button>
+<button class="calc-btn bg-red-600 text-white p-4 rounded-2xl text-lg font-semibold" onclick="slcData()">⌫</button>
 
 <!-- Row 1 -->
 <button class="calc-btn bg-red-500 text-white p-4 rounded-2xl text-lg font-semibold">1/x</button>
@@ -110,5 +110,31 @@ class="calc-btn equal-btn bg-gradient-to-r from-blue-600 to-cyan-500 text-white 
 </div>
 </div>
 
+
+<script>
+    
+//Create audio
+const audio = new Audio('./audio/music.ogg');
+audio.autoplay = true;
+audio.loop = true;
+audio.muted = true; // Start muted for autoplay
+
+// Play when page loads
+window.addEventListener('load', async () => {
+    try {
+        await audio.play();
+        console.log('Music started muted');
+    } catch (err) {
+        console.log('Autoplay blocked:', err);
+    }
+});
+
+// Unmute after first user interaction
+document.addEventListener('click', () => {
+    audio.muted = false;
+    console.log('Music unmuted');
+}, { once: true });
+
+</script>
 </body>
 </html>
