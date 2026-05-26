@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Animated Calculator</title>
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
+</head>
+
+<body oncontextmenu="return false;" class="flex items-center justify-center p-4">
+
+<!-- Calculator -->
+<div
+class="calculator
+w-full
+max-w-[380px]
+sm:max-w-[420px]
+md:max-w-[450px]
+bg-white/10
+border border-white/20
+rounded-3xl
+shadow-2xl
+p-4 sm:p-6"
+>
+
+<!-- Display -->
+<div class="mb-5">
+<input
+type="text"
+placeholder="0"
+id="result"
+class="w-full
+h-20
+rounded-2xl
+bg-black/30
+text-white
+text-right
+text-3xl
+sm:text-4xl
+px-5
+outline-none
+border border-white/10"
+/>
+</div>
+
+<!-- Buttons -->
+<div class="grid grid-cols-4 gap-3">
+
+<!-- Row 1 -->
+<button class="calc-btn bg-red-500 text-white p-4 rounded-2xl text-lg font-semibold">%</button>
+
+<button class="calc-btn bg-orange-500 text-white p-4 rounded-2xl text-lg font-semibold">CE</button>
+
+<button class="calc-btn bg-orange-500 text-white p-4 rounded-2xl text-lg font-semibold" onclick="clrValue()">C</button>
+
+<button class="calc-btn bg-red-600 text-white p-4 rounded-2xl text-lg font-semibold" onclick="slcData()"><=</button>
+
+<!-- Row 1 -->
+<button class="calc-btn bg-red-500 text-white p-4 rounded-2xl text-lg font-semibold">1/x</button>
+
+<button class="calc-btn bg-orange-500 text-white p-4 rounded-2xl text-lg font-semibold" onclick="Square()">x²</button>
+
+<button class="calc-btn bg-orange-500 text-white p-4 rounded-2xl text-lg font-semibold" onclick="SquareRoot()">√x</button>
+
+<button class="calc-btn bg-red-600 text-white p-4 rounded-2xl text-lg font-semibold" value="/" onclick="return inpData(this.value)">÷</button>
+
+<!-- Row 2 -->
+<button class="calc-btn bg-white/20 text-white p-4 rounded-2xl text-xl" value="7" onclick="return inpData(this.value)">7</button>
+
+<button class="calc-btn bg-white/20 text-white p-4 rounded-2xl text-xl" value="8" onclick="return inpData(this.value)">8</button>
+
+<button class="calc-btn bg-white/20 text-white p-4 rounded-2xl text-xl" value="9" onclick="return inpData(this.value)">9</button>
+
+<button class="calc-btn bg-blue-500 text-white p-4 rounded-2xl text-xl" value="*" onclick="return inpData(this.value)">*</button>
+
+<!-- Row 3 -->
+<button class="calc-btn bg-white/20 text-white p-4 rounded-2xl text-xl" value="4" onclick="return inpData(this.value)">4</button>
+
+<button class="calc-btn bg-white/20 text-white p-4 rounded-2xl text-xl" value="5" onclick="return inpData(this.value)">5</button>
+
+<button class="calc-btn bg-white/20 text-white p-4 rounded-2xl text-xl" value="6" onclick="return inpData(this.value)">6</button>
+
+<button class="calc-btn bg-blue-500 text-white p-4 rounded-2xl text-xl" value="+" onclick="return inpData(this.value)">+</button>
+
+<!-- Row 4 -->
+<button class="calc-btn bg-white/20 text-white p-4 rounded-2xl text-xl" value="1" onclick="return inpData(this.value)">1</button>
+
+<button class="calc-btn bg-white/20 text-white p-4 rounded-2xl text-xl" value="2" onclick="return inpData(this.value)">2</button>
+
+<button class="calc-btn bg-white/20 text-white p-4 rounded-2xl text-xl" value="3" onclick="return inpData(this.value)">3</button>
+
+<button class="calc-btn bg-blue-500 text-white p-4 rounded-2xl text-xl" value="-" onclick="return inpData(this.value)">-</button>
+
+<!-- Row 5 -->
+<button class="calc-btn bg-gray-700 text-white p-4 rounded-2xl text-xl" value="+/-" onclick="return inpData(this.value)">+/-</button>
+
+<button class="calc-btn bg-white/20 text-white p-4 rounded-2xl text-xl" value="0" onclick="return inpData(this.value)">0</button>
+
+<button class="calc-btn bg-white/20 text-white p-4 rounded-2xl text-xl" value="." onclick="return inpData(this.value)">.</button>
+
+<button type="button" onclick="finalResult()"
+class="calc-btn equal-btn bg-gradient-to-r from-blue-600 to-cyan-500 text-white p-4 rounded-2xl text-xl font-bold"
+>
+=
+</button>
+</div>
+</div>
+
+</body>
+</html>

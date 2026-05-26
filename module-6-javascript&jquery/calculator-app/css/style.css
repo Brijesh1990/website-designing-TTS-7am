@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+  body
+  {
+      background: linear-gradient(135deg, #0f172a, #1e293b, #111827);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Floating animation */
+    .calculator {
+      animation: float 4s ease-in-out infinite;
+      backdrop-filter: blur(18px);
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+    /* Button hover animation */
+    .calc-btn {
+      transition: all 0.2s ease-in-out;
+    }
+
+    .calc-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 18px rgba(255, 255, 255, 0.25);
+    }
+
+    .calc-btn:active {
+      transform: scale(0.95);
+    }
+
+    /* Glow animation */
+    .equal-btn {
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 10px #2563eb;
+      }
+      to {
+        box-shadow: 0 0 25px #3b82f6;
+      }
+    }
+
+    /* Input style */
+    #result {
+      letter-spacing: 2px;
+    }
