@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- jquery CDN(content delivery network) -->
+<script src="https://code.jquery.com/jquery-4.0.0.js"></script> 
+<script>
+$(document).ready(function(){
+
+    $("#btn").click(function(){
+
+        var age=prompt("Enter your age :")
+        if(age >=18)
+        {
+         document.getElementById("result").innerHTML="I am eligible for vote";
+        }
+        else 
+        {
+
+         document.getElementById("result").innerHTML="I am Not eligible for vote";
+        }
+    
+    })
+})
+</script>
+</head>
+<body>
+<p id="result"></p>    
+<button type="button" id="btn">Check condition!</button>
+</body>
+</html>

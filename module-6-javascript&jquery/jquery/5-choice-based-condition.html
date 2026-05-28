@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- jquery CDN(content delivery network) -->
+<script src="https://code.jquery.com/jquery-4.0.0.js"></script> 
+<script>
+$(document).ready(function(){
+
+$("#btn").click(function(){
+
+var a=parseInt(document.getElementById("a").value);
+var b=parseInt(document.getElementById("b").value);   
+var choice=parseInt(document.getElementById("choice").value);   
+
+if(choice==1)
+{
+c=a+b;
+document.getElementById("result").innerHTML="Additions of numbers is :"+c;
+}
+else if(choice==2)
+{
+c=a-b;
+document.getElementById("result").innerHTML="Substractions of numbers is :"+c;
+}
+else if(choice==3)
+{
+c=a*b;
+document.getElementById("result").innerHTML="Multiplications of numbers is :"+c;
+}
+else 
+{
+document.getElementById("result").innerHTML="You select wrong choice";
+}
+
+
+})
+})
+
+</script>
+</head>
+<body><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- jquery CDN(content delivery network) -->
+<script src="https://code.jquery.com/jquery-4.0.0.js"></script> 
+<script>
+$(document).ready(function(){
+$("#btn").click(function(){
+var num=parseInt(prompt("Enter a Numbers :"))
+var result="";
+for (var i=1; i<=num; i++)
+{
+if(i%2!==0)
+{  
+// Display result
+result += i + " ";
+} 
+}
+
+$("#result").html("Odd Numbers are : " + result);
+//$("#result").html("Even Numbers are : " + result);
+})
+})
+</script>
+</head>
+<body>
+<p id="result"></p>    
+<button type="button" id="btn">Only odd number check in naturals numbers</button>
+</body>
+</html>
+<p id="result"></p>
+<input type="text" id="a" placeholder="Enter a values :">
+<br><br>
+<input type="text" id="b" placeholder="Enter b values :">
+<br><br>
+<select id="choice">
+<option value="">-select choice-</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select>
+<button type="button" id="btn">click</button>
+
+</body>
+</html>

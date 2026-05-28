@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- jquery CDN(content delivery network) -->
+<script src="https://code.jquery.com/jquery-4.0.0.js"></script> 
+<script>
+$(document).ready(function(){
+//element selector
+$("div").css({"width":"40%","height":"auto","margin":"auto","padding":"15px","background-color":"coral"})
+// id selector 
+$("#result").css({"color":"blue","font-size":"25px"})
+//class selector 
+$(".btn").css({"color":"blue","font-size":"25px"})
+})
+</script>
+</head>
+<body>
+<div>
+<p id="result"></p>    
+<button type="button" id="btn" class="btn">click</button>
+</div>
+</body>
+</html>
