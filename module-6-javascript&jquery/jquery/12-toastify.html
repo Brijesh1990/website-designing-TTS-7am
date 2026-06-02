@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- jquery CDN(content delivery network) -->
+<link rel="stylesheet" href="styles.css"> 
+<script src="https://code.jquery.com/jquery-4.0.0.js"></script> 
+<script src="toast-plugin-min.js"></script>
+<script>
+$(document).ready(function(){
+
+    // Add Row
+    $("#btn").click(function(){
+
+        $("table").append(`
+            <tr>
+                <td>Rakshit</td>
+                <td>22</td>
+                <td>20500</td>
+                <td>360006</td>
+                <td>Behind Lal Bangla, Ahmedabad</td>
+                <td align="center">
+                    <a href="#" class="del">❌</a>
+                </td>
+            </tr>
+        `);
+
+        $.toast({
+            title: "Success!",
+            message: "New row added successfully.",
+            type: "success",
+            duration: 3000
+        });
+    });
+
+    // Delete Row
+    $(document).on("click", ".del", function(e){
+
+        e.preventDefault();
+
+        $(this).closest("tr").remove();
+
+        $.toast({
+            title: "Deleted!",
+            message: "Record deleted successfully.",
+            type: "error",
+            duration: 3000
+        });
+    });
+
+});
+</script>
+<style>
+div 
+{
+width: 50%;
+height: auto;
+margin: auto;
+padding: 25px;
+}
+</style>
+
+</head>
+<body>
+<div>
+<button type="button" id="btn">Add Row ➕</button>
+<br><br>    
+<table align="center" width="100%" border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Salary</th>
+        <th>Pin</th>
+        <th>Address</th>
+        <th>Action</th>
+    </tr>
+    <tr id="del-data">
+        <td>Brijesh</td>
+        <td>35</td>
+        <td>98500</td>
+        <td>360005</td>
+        <td>150 feet ring road</td>
+        <td align="center"><a href="#" id="del">❌</a></td>
+    </tr>
+</table>
+</div>
+</body>
+</html>

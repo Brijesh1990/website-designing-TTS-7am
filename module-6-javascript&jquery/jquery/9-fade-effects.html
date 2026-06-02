@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- jquery CDN(content delivery network) -->
+<script src="https://code.jquery.com/jquery-4.0.0.js"></script> 
+<script>
+$(document).ready(function(){
+
+$("#slide").click(function(){
+$("#slider").fadeToggle(2000);
+})
+
+})    
+</script>
+<style>
+#slide 
+{
+width: 60%;
+height: auto;
+margin: auto;
+padding: 15px;   
+font-size: 25px;
+}    
+#slider
+{
+width: 60%;
+height: auto;
+margin: auto;
+padding: 8px;
+border: none;    
+}
+</style>
+
+</head>
+<body>
+<div id="slide">
+<p id="para">click to slide</p>   
+</div>
+<div id="slider">
+<img src="https://wowslider.com/sliders/demo-18/data1/images/hongkong1081704.jpg">
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://code.jquery.com/jquery-4.0.0.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+$(document).ready(function(){
+   
+    $("#btn").click(function(){
+   
+     Swal.fire({
+     title: "wow ?",
+     text: "Your data successfully added",
+     icon: "success"
+   });
+  })
+
+      $("#btn1").click(function(){
+   
+     Swal.fire({
+     title: "wow ?",
+     text: "Your data successfully deleted",
+     icon: "warning"
+   });
+  })
+
+   $("#btn2").click(function(){
+   
+   Swal.fire({
+  title: "Do you want to save the changes?",
+  showDenyButton: true,
+  showCancelButton: true,
+  confirmButtonText: "Save",
+  denyButtonText: `Don't save`
+}).then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+  if (result.isConfirmed) Swal.fire("Saved!", "", "success");
+  else if (result.isDenied) Swal.fire("Changes are not saved", "", "info");
+});
+
+  })
+
+})    
+</script>
+<style>
+#section 
+{
+ width: 50%;
+ height: auto;
+ margin: auto;   
+}
+#section button 
+{
+width: 30%;
+height: auto;
+padding: 8px;    
+}
+</style>
+</head>
+<body>
+<div id="section">  
+<button type="button" id="btn">Add Data</button> 
+<button type="button" id="btn1">Delete Data</button> 
+<button type="button" id="btn2">Are you sure to delete Data</button>    
+</div>
+</body>
+</html>

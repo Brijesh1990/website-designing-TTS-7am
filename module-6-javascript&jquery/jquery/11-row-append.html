@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- jquery CDN(content delivery network) -->
+<script src="https://code.jquery.com/jquery-4.0.0.js"></script> 
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+
+    $("table").append("<tr><td>Rakshit</td><td>22</td><td>20500</td><td>360006</td><td>behind lal bangla ahemdabad</td></tr>")
+  })
+})    
+</script>
+<style>
+div 
+{
+width: 50%;
+height: auto;
+margin: auto;
+padding: 25px;
+}
+</style>
+
+</head>
+<body>
+<div>
+<button type="button" id="btn">Add Row ➕</button>
+<br><br>    
+<table align="center" width="100%" border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Salary</th>
+        <th>Pin</th>
+        <th>Address</th>
+    </tr>
+    <tr>
+        <td>Brijesh</td>
+        <td>35</td>
+        <td>98500</td>
+        <td>360005</td>
+        <td>150 feet ring road</td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
